@@ -1,0 +1,47 @@
+
+<div>
+    <h2><span data-translate="boncmd3App.commande.detail.title">Commande</span> {{vm.commande.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="boncmd3App.commande.referenceCommande">Reference Commande</span></dt>
+        <dd>
+            <span>{{vm.commande.referenceCommande}}</span>
+        </dd>
+        <dt><span data-translate="boncmd3App.commande.dateCommande">Date Commande</span></dt>
+        <dd>
+            <span>{{vm.commande.dateCommande | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="boncmd3App.commande.emailContactAdministratif">Email Contact Administratif</span></dt>
+        <dd>
+            <span>{{vm.commande.emailContactAdministratif}}</span>
+        </dd>
+        <dt><span data-translate="boncmd3App.commande.telContactAdministratif">Tel Contact Administratif</span></dt>
+        <dd>
+            <span>{{vm.commande.telContactAdministratif}}</span>
+        </dd>
+        <dt><span data-translate="boncmd3App.commande.emailContactTechnique">Email Contact Technique</span></dt>
+        <dd>
+            <span>{{vm.commande.emailContactTechnique}}</span>
+        </dd>
+        <dt><span data-translate="boncmd3App.commande.telContactTechnique">Tel Contact Technique</span></dt>
+        <dd>
+            <span>{{vm.commande.telContactTechnique}}</span>
+        </dd>
+        <dt><span data-translate="boncmd3App.commande.produit">Produit</span></dt>
+        <dd>
+            <a ui-sref="produitmy-detail({id:vm.commande.produitId})">{{vm.commande.produitReferenceProduit}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="commandemy-detail.edit({id:vm.commande.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

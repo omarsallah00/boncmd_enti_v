@@ -1,0 +1,28 @@
+{
+    "boncmd3App": {
+        "commande" : {
+            "home": {
+                "title": "Commandes",
+                "createLabel": "Créer un nouveau Commande",
+                "createOrEditLabel": "Créer ou éditer un Commande",
+                "search": "Recherche pour Commande"
+            },
+            "created": "Un nouveau Commande a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Commande avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Commande avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Commande {{ id }} ?"
+            },
+            "detail": {
+                "title": "Commande"
+            },
+            "referenceCommande": "Reference Commande",
+            "dateCommande": "Date Commande",
+            "emailContactAdministratif": "Email Contact Administratif",
+            "telContactAdministratif": "Tel Contact Administratif",
+            "emailContactTechnique": "Email Contact Technique",
+            "telContactTechnique": "Tel Contact Technique",
+            "produit": "Produit"
+        }
+    }
+}

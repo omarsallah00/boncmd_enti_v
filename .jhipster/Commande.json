@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "produit",
+            "otherEntityName": "produit",
+            "otherEntityField": "referenceProduit"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "referenceCommande",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateCommande",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "emailContactAdministratif",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telContactAdministratif",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailContactTechnique",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telContactTechnique",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170104151044",
+    "entityTableName": "commande",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "angularJSSuffix": "my"
+}

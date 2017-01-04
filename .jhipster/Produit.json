@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "categorie",
+            "otherEntityName": "categorie",
+            "otherEntityField": "referenceCategorie"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "referenceProduit",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "designation",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170104151042",
+    "entityTableName": "produit",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "angularJSSuffix": "my"
+}

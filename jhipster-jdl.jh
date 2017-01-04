@@ -1,0 +1,45 @@
+entity Produit{
+referenceProduit String,
+designation String
+}
+
+
+entity Categorie{
+referenceCategorie String,
+description String
+}
+
+entity Commande {
+referenceCommande String,
+dateCommande ZonedDateTime,
+emailContactAdministratif String,
+telContactAdministratif String,
+emailContactTechnique String,
+telContactTechnique String
+}
+
+entity Panier{
+quantite Long
+}
+
+relationship ManyToOne {
+	Produit{Categorie(referenceCategorie)} to Categorie
+}
+
+relationship ManyToOne {
+	Commande{Produit(referenceProduit)} to Produit
+}
+
+relationship ManyToOne {
+	Panier{Commande(referenceCommande)} to Commande
+}
+
+paginate all with infinite-scroll
+paginate all with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+// Set an angular suffix
+angularSuffix * with my

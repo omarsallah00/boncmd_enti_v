@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "commande",
+            "otherEntityName": "commande",
+            "otherEntityField": "referenceCommande"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "quantite",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20170104151045",
+    "entityTableName": "panier",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "angularJSSuffix": "my"
+}

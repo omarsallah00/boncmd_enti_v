@@ -1,0 +1,27 @@
+
+<div>
+    <h2><span data-translate="boncmd3App.panier.detail.title">Panier</span> {{vm.panier.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="boncmd3App.panier.quantite">Quantite</span></dt>
+        <dd>
+            <span>{{vm.panier.quantite}}</span>
+        </dd>
+        <dt><span data-translate="boncmd3App.panier.commande">Commande</span></dt>
+        <dd>
+            <a ui-sref="commandemy-detail({id:vm.panier.commandeId})">{{vm.panier.commandeReferenceCommande}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="paniermy-detail.edit({id:vm.panier.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
